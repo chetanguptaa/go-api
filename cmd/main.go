@@ -20,6 +20,5 @@ func main() {
 	app.Get("/healthcheck", healthcheck)
 	app.Post("/api/products", handlers.CreateProduct)
 	app.Get("/api/products", handlers.GetAllProducts)
-	fmt.Println("Hello World!")
 	log.Fatal(app.Listen(":3000"))
 }
